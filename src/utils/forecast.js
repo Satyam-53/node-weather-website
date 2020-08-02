@@ -12,7 +12,7 @@ const forecast = (latitude,longitude, callback) => {
             callback(undefined, {
                 datetime: body.data[0].datetime,
                 temperature: body.data[0].temp,
-                wind_direction: body.data[0].wind_dir
+                weather_des: body.data[0].weather.description
             } )
         }
     })

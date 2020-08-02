@@ -18,9 +18,8 @@ weatherForm.addEventListener('submit',(e)=>{
             messageTwo.textContent = data.error
         } else {          
             messageOne.textContent = data.location
-            messageTwo.textContent = 'temperature: '+data.forecastData.temperature
-            //   console.log(data.location)
-            //   console.log(data.forecastData)
+            messageTwo.textContent = 'On '+ data.forecastData.datetime+', the temperature is '+ data.forecastData.temperature+'. It\'s '+ data.forecastData.weather_des+ ' today.'
+            // messageTwo.textContent = 'temperature: '+data.forecastData.temperature
         }
     })
 })
